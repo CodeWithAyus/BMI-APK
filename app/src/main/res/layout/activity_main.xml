@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:textStyle="italic|bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="#D1C4E9"/>
+
+       <LinearLayout
+           android:id="@+id/myActivity"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_centerInParent="true">
+
+    <EditText
+        android:id="@+id/edtwt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint2"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:autofillHints="phone" />
+    <EditText
+        android:id="@+id/edtht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:autofillHints="phone" />
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+           <TextView
+               android:id="@+id/resulttxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/result"
+               android:textSize="20sp"
+               />
+
+
+       </LinearLayout>
+
+</RelativeLayout>
